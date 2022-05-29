@@ -25,15 +25,15 @@ We use 3 SQL queries in our database in order to filter out the employees from a
 
 Q: How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
-A: Approximately 72,000 employees (or 72,458 employees exactly) will have to be replaced as soon as everyone eligible for retirement leaves the workforce. This figure demonstrates that approximately 72,000 employees are required in order for each department to function.
+  A: Approximately 72,000 employees (or 72,458 employees exactly) will have to be replaced as soon as everyone eligible for retirement leaves the workforce. This figure demonstrates that approximately 72,000 employees are required in order for each department to function.
 
 Q: Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
-A: If we divide the number of people with certain job titles that have to be replaced with the number of people with that exact job title who are eligible for the mentorship program, we get some bad news.
+  A: If we divide the number of people with certain job titles that have to be replaced with the number of people with that exact job title who are eligible for the mentorship program, we get some bad news.
 
 By using the SQL query below, we can group the number of employees that can mentor with each title.
 
-SQL Query on number of employees available for each department's mentorship program: 
+**SQL Query on number of employees available for each department's mentorship program: **
 
 `
 SELECT COUNT(me.title), me.title
