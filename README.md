@@ -8,7 +8,7 @@ We use 3 SQL queries in our database in order to filter out the employees from a
 ---
 ## Results
 
-![Retirement_titles_amount](https://myoctocat.com/assets/images/base-octocat.svg)
+![Retirement_titles_amount](https://github.com/namin1993/Pewlett-Hackard-Analysis/blob/250bba3b5f0e8854c49c0f2ab01d54bc2fad3a1d/Pewlett-Hackard-Analysis/Images/Retirement_titles_amount.png)
 
 - According to the retiring_titles.csv file, a total of 72,458 employees with their current job titles are expected to retire soon!
 
@@ -51,8 +51,7 @@ Since we must take into account that not all retiring employees will want to par
 
 The 2 SQL Queries listed below can further help us understand which departments will be affected be retirement exodus. First, create a new table which merges all current retiring employees in 'unique_titles' with 'department_employees' and 'departments' in order to associate each retiring employee to their department. Then, create a table which displays the number of retiring employees per department.
 
-`
-SELECT ut.emp_no,
+` SELECT ut.emp_no,
 ut.first_name,
 ut.last_name,
 ut.title,
@@ -69,7 +68,6 @@ SELECT COUNT(re.dept_no), re.dept_name
 INTO retirement_department_groups
 FROM retirement_departments as re
 GROUP BY re.dept_name
-ORDER BY COUNT(re.dept_no) DESC;
-`
+ORDER BY COUNT(re.dept_no) DESC; `
 
-![Mentoring_amount](https://myoctocat.com/assets/images/base-octocat.svg)
+![Mentoring_amount](https://github.com/namin1993/Pewlett-Hackard-Analysis/blob/250bba3b5f0e8854c49c0f2ab01d54bc2fad3a1d/Pewlett-Hackard-Analysis/Images/Mentoring_amount.png)
