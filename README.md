@@ -36,10 +36,10 @@ By using the SQL query below, we can group the number of employees that can ment
 SQL Query on number of employees available for each department's mentorship program: 
 
 `
-SELECT COUNT(me.title), me.title /n
-INTO mentoring_titles /n
-FROM mentorship_eligibility as me /n
-GROUP BY me.title /n
+SELECT COUNT(me.title), me.title
+INTO mentoring_titles
+FROM mentorship_eligibility as me
+GROUP BY me.title
 ORDER BY COUNT(me.title) DESC;
 `
 
